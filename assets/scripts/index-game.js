@@ -5052,6 +5052,7 @@ _updateBallJump(_0x2fe319) {
         const _0x3d0365 = _0x2478d6 - _0x3729ef._cameraX;
         const _0x3790a9 = b(_0x148e69) + _0x3729ef._cameraY;
         const _0x1cb4d3 = 1 - spriteWidth * spriteWidth;
+        _0x3729ef._setPercentageLabel(_0x3729ef._getLevelPercent(_0x2478d6));
         const _0x1d2e2f = _0x3fc5a5[0].spr.rotation;
         const _0xd3cb2a = Math.cos(_0x1d2e2f);
         const _0x2f86c2 = Math.sin(_0x1d2e2f);
@@ -9033,7 +9034,6 @@ _applyMirrorEffect() {
   }
 
     _triggerEndPortal() {
-    this._setPercentageLabel(100);
     this._player.playEndAnimation(this._level.endXPos, () => this._levelComplete(), this._endPortalGameY);
   }
   _levelComplete() {
